@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #000;
+  --secondary-color: #6c757d;
+  --error-color: #ed5848;
+  --background-color: #f8f9fac5;
+  --text-color: #333;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid #777;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* 一覧画面のスタイル */
+.todos-page {
+  width: 100%;
+}
+
+/* ヘッダーのスタイル */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* ページタイトルのスタイル */
+.page-title {
+  color: #333;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ログアウトボタンのスタイル */
+.btn-logout {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 新規登録ボタンのスタイル */
+.btn-new {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ボタンのホバー効果 */
+button:hover {
+  opacity: 0.9;
+}
+
+/* テーブルの基本スタイル */
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #aaa;
+  text-align: left;
+  word-break: break-all;
+}
+
+/* ヘッダーのスタイル */
+th {
+  background-color: var(--background-color);
+  color: #000;
+}
+
+td {
+  color: #333;
+}
+
+/* 完了ボタンのスタイル */
+.btn-done {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 削除ボタンのスタイル */
+.btn-delete {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* ボタンのホバー効果 */
+.btn-done:hover,
+.btn-delete:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,3 @@
+CREATE DATABASE todo;
+CREATE USER IF NOT EXISTS casareal IDENTIFIED BY 'P@ssw0rd';
+GRANT ALL ON todo.* TO casareal;
